@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+    <head>
+        <meta charset="utf-8"/>
+		<meta name="viewport" content="width=320" />
+		<link rel="stylesheet" href="Projet_Invit_Even_2.css"/>
+        <title>Project: Wedding Announcement</title>
+    </head>
+	
+	
+    <body>
+		<script src="jquery/jquery-3.5.1.min.js"></script>
+		<script src="jquery/jquery-3.5.1.js"></script>
+
+		<div id="main_wrapper">
+			<header>
+				<h1>Partageons ce moment ensemble!</h1>
+				<script>
+					var $title1 = $('h1');
+					$title1.on('click', function(event){
+						var $date = new Date(event.timeStamp);
+						$title1.text("Tu cliques à " + $date.getHours() + "h" + $date.getMinutes() + ":" + $date.getSeconds())
+					});
+				</script>
+			</header>
+			
+			<!-- Card Announcement-->
+
+			<section id="card">
+				<div> 
+					<h2>VOUS ÊTES INVITÉS À NOTRE MARIAGE</h2>
+					<p>Sandra & Benjamin</p>
+					<p>vous attendent<br>le 17/04/2021</p>
+					<p>à la mairie de Margaux</p>
+				</div>
+				<div id="string-vertical"></div>
+			</section>
+			
+			<div id="speech">
+				<p class="txt">Quoi de plus normal que de lier officiellement notre union depuis maintenant plus de 16 ans. Nous avons pensé à une cérémonie minimaliste avec le noyau dur des personnes qui comptent le plus pour nous. Naturellement, vous ètes nombreux à avoir partagés avec nous et pendant toutes ces années, les bonheurs, les aléas et les difficultés de la vie. C'est pourquoi nous ne voyons pas comment nous marier sans vous!</p>
+			</div>
+
+
+			<!-- How the day went -->
+			
+			<section class="txt">
+				<h2>La journée</h2>
+				<ul>
+					<li><span class="time">15h30:</span> Mairie de Margaux: <a class="link_maps" href="https://goo.gl/maps/E94wjh2QXTGHvzfr8" title="Mairie Margaux" target="_blank" >12 rue de la Trémoille 33460 Margaux-Cantenac</a></li>
+					<li><span class="time">16h15:</span> Photo de groupe devant le château Margaux</li>
+					<li><span class="time">17h00:</span> Cocktail au Domaine de Cordet: <a class="link_maps" href="https://goo.gl/maps/uzQ7MTHhWqzSnoTbA" title="Domaine de Cordet" target="_blank">162 Av Vonderheyden 33460 Arsac</a></li>
+					<li><span class="time">20h00:</span> Repas</li>
+					<li>Début de soirée</li>
+					<li><span class="time">23h00:</span> Gateau des mariés</li>
+					<li>...Nuit de folie!</li>
+				</ul>
+			</section>
+			
+			<!-- Guest List -->
+			<section class="txt">
+				<h2>Liste des Invités</h2>
+				
+				<table>
+					<tr>
+						<th>Nom</th>
+						<th>Prénom</th>
+						<th>Ad/Enf</th>
+						<th>Réponse</th>
+					</tr>
+					
+					<tr>
+						<td >Delouest</td>
+						<td>Wililam</td>
+						<td class="ad_enf">A</td>
+						<td class="btn_answer"><button class="btn_RSVP">CLIC</button></td>
+					</tr>
+					
+					<tr>
+						<td>Delouest</td>
+						<td>Blandine</td>
+						<td class="ad_enf">E</td>
+						<td class="btn_answer"><button class="btn_RSVP">CLIC</button></td>
+					</tr>
+					
+					<tr>
+						<td>Marielle</td>
+						<td>Betty</td>
+						<td class="ad_enf">A</td>
+						<td class="btn_answer"><button class="btn_RSVP">CLIC</button></td>
+					</tr>
+					
+					<tr>
+						<td>Marielle</td>
+						<td>Frédéric</td>
+						<td class="ad_enf">A</td>
+						<td class="btn_answer"><button class="btn_RSVP">CLIC</button></td>
+					</tr>
+					
+				</table>
+			</section>
+			
+			<section class="txt">
+				<h2>Un Petit Mot?</h2>
+				<p>N'hésitez pas à nous envoyer un petit mail pour discuter en cliquant directement sur le lien, <a href="mailto:les_maries@gmail.com">ICI</a>.</p>
+
+				<p>OU</p>
+				
+				<!-- Formulaire -->
+				<h3>Contact</h3>
+				<form method="post" action="traitment.php">
+					<p>
+						<div>
+							<label for="pseudo">Pseudo:</label>
+							<input type="text" name="pseudo" id="pseudo" placeholder="Ex: Bigorneau" maxlength="20" required />
+						</div>
+						<div>
+							<label for="pass">Mot de passe:</label>
+							<input type="password" name="pass" id="pass" maxlength="15" required/>
+						</div>
+						<div>
+							<label for="mail">Votre email:</label>
+							<input type="email" name="mail" id="mail" placeholder="name.surname@truc.com" required />
+						</div>
+						<div>
+						<label for="message">Votre message:</label><br>
+						<textarea name="message" id="message" rows="10" cols="60" placeholder="Allez-y, écrivez-nous..."></textarea>
+						</div>
+						<!-- Button -->
+						<input type="submit" value="Envoyer" id="btn_send"/>
+					</p>
+				</form>
+				
+			</section>
+			
+			
+			<!-- Test -->
+			<article class="txt">
+				<h2>Test article</h2>
+				<p id="lorem" class="txt">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci. Aenean nec lorem. In porttitor. Donec laoreet nonummy augue. Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy. Fusce aliquet pede non pede. Suspendisse dapibus lorem pellentesque magna. Integer nulla. Donec blandit feugiat ligula. Donec hendrerit, felis et imperdiet euismod, purus ipsum pretium metus, in lacinia nulla nisl eget sapien. Donec ut est in lectus consequat consequat. Etiam eget dui. Aliquam erat volutpat. Sed at lorem in nunc porta tristique. Proin nec augue. Quisque aliquam tempor magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc ac magna. Maecenas odio dolor, vulputate vel, auctor ac, accumsan id, felis. Pellentesque cursus sagittis felis. Pellentesque porttitor, velit lacinia egestas auctor, diam eros tempus arcu, nec vulputate augue magna vel risus. Cras non magna vel ante adipiscing rhoncus. </p>
+			</article>
+			
+			
+			<footer>
+			<p class="txt">2020 Copyright ON - Tous droits réservés</p>
+			</footer>
+		</div>
+    </body>
+</html>

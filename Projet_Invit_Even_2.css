@@ -1,0 +1,132 @@
+/*
+@uthor: Olivier Nolibois
+*/
+
+@font-face{
+	font-family: 'Tox_typewriter';
+	src: url('Font/tox_typewriter/Tox Typewriter.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	}
+	
+body{
+	font-family: courier, monospace, serif;
+	background-color: rgb(223,220,214);
+	}
+
+#main_wrapper{
+	max-width: 1030px;
+	margin: auto;
+	}
+	
+h1{
+	font-family: Tox_typewriter,courier, monospace, serif;
+	text-align: center;
+	color: white;
+	background-color: rgb(142, 111, 78);
+	padding: 15px;
+	margin: -10px;
+}
+	
+#card, h2{
+	font-family: Tox_typewriter, courier, monospace, serif;
+}
+
+#card p{
+	font-size: 1.2em;
+}
+
+#card{
+	text-align: center;
+	background: url("img/Card_node.png") no-repeat 0px 20px;
+	margin-top: 30px;
+	padding-top: 70px;
+	padding-bottom: 110px;
+}
+
+#string-vertical{
+	position: relative;
+	float: left;
+	background: url("img/String.png") repeat-y ;
+	height: 2000px;
+	width: 90px;
+	margin-left: 33px;
+	margin-top: 110px;
+	z-index: 1;
+}
+
+.txt{
+	max-width: 980px;
+}
+
+.txt h2{
+	position:relative;
+	background: url("img/American_Tag.png") no-repeat 15px 15px;
+	padding-top: 47px;
+	padding-bottom: 47px;
+	width: 360px;
+	text-align: center;
+	z-index: 2;
+}
+
+.time{
+	font-weight: bold;
+}
+
+.link_maps:hover{
+	cursor: url("Img/Marker_map.png") 16 32, auto;
+}
+
+footer{
+	background-color: rgb(75, 65, 32);
+	text-align: right;
+	color: rgb(223,220,214);
+	margin-top: 50px;
+	padding: 15px;
+}
+
+table{
+
+	border-collapse: collapse;
+	border-radius: 8px;
+	box-shadow: 0px 0px 8px 2px rgba(142, 111, 78, 0.4);
+}
+
+tr:nth-child(2n+1){
+	background-color: rgba(156, 146, 137, 0.3);
+}
+
+td{	
+	border-radius: 8px;
+	padding: 5px;
+}
+
+th{
+	background-color: rgba(190, 146, 106, 0.5);
+	border-left: 1px rgb(87, 68, 50) solid;
+	padding: 3px 5px;
+}
+
+th:nth-child(1){
+	border-left: none;
+}
+
+.ad_enf, .btn_answer{
+	text-align: center;
+}
+
+::placeholder{
+	color: rgb(215, 215, 215);
+}
+
+#btn_send{
+	border-radius: 10px;
+	background: linear-gradient( to bottom, #f12400 0%, #8f1900 100%);	
+	color: white;
+}
+
+/* @media all and (max-width: 1024px){
+	#main_wrapper{
+		color: blue;
+	}
+} */
