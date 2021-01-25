@@ -4,7 +4,7 @@
 
 @font-face{
 	font-family: 'Tox_typewriter';
-	src: url('Font/tox_typewriter/Tox Typewriter.ttf') format('truetype');
+	src: url('Tox Typewriter.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 	}
@@ -38,7 +38,7 @@ h1{
 
 #card{
 	text-align: center;
-	background: url("img/Card_node.png") no-repeat 0px 20px;
+	background: url("Card_node.png") no-repeat 0px 20px;
 	margin-top: 30px;
 	padding-top: 70px;
 	padding-bottom: 110px;
@@ -47,7 +47,7 @@ h1{
 #string-vertical{
 	position: relative;
 	float: left;
-	background: url("img/String.png") repeat-y ;
+	background: url("String.png") repeat-y ;
 	height: 2000px;
 	width: 90px;
 	margin-left: 33px;
@@ -61,7 +61,7 @@ h1{
 
 .txt h2{
 	position:relative;
-	background: url("img/American_Tag.png") no-repeat 15px 15px;
+	background: url("American_Tag.png") no-repeat 15px 15px;
 	padding-top: 47px;
 	padding-bottom: 47px;
 	width: 360px;
@@ -74,7 +74,7 @@ h1{
 }
 
 .link_maps:hover{
-	cursor: url("Img/Marker_map.png") 16 32, auto;
+	cursor: url("Marker_map.png") 16 32, auto;
 }
 
 footer{
